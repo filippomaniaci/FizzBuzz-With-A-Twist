@@ -30,7 +30,7 @@ namespace TwistedFizzBuzz
             var result = new List<string>();
             for (int i = initialRange; i <= finalRange; i++)
             {
-                result.Add(FizzBuzzCalculator.CalculateFizzBuzz(i));
+                result.Add(_calculator.CalculateFizzBuzz(i));
             }
             return result;
         }
@@ -51,7 +51,7 @@ namespace TwistedFizzBuzz
             var result = new List<string>();
             foreach (var number in numbers)
             {
-                result.Add(FizzBuzzCalculator.CalculateFizzBuzz(number));
+                result.Add(_calculator.CalculateFizzBuzz(number));
             }
             return result;
         }
@@ -72,7 +72,7 @@ namespace TwistedFizzBuzz
 
             for (int i = initialRange; i <= finalRange; i++)
             {
-                result.Add(FizzBuzzCalculator.CalculateCustomTokenResult(i, tokens));
+                result.Add(_calculator.CalculateCustomTokenResult(i, tokens));
             }
 
             return result;
@@ -87,18 +87,18 @@ namespace TwistedFizzBuzz
 
             for (int i = initialRange; i <= finalRange; i++)
             {
-                result.Add(FizzBuzzCalculator.CalculateCustomTokenResult(i, tokens));
+                result.Add(_calculator.CalculateCustomTokenResult(i, tokens));
             }
             return result;
         }
 
-        public static List<string> PrintOutputWithCustomTokens(Dictionary<int, string> tokens, int initialRange, int finalRange)
+        public List<string> PrintOutputWithCustomTokens(Dictionary<int, string> tokens, int initialRange, int finalRange)
         {
             var result = new List<string>();
 
             for (int i = initialRange; i <= finalRange; i++)
             {
-                result.Add(FizzBuzzCalculator.CalculateCustomTokenResult(i, tokens));
+                result.Add(_calculator.CalculateCustomTokenResult(i, tokens));
             }
             return result;
         }

@@ -2,7 +2,7 @@
 {
     public class FizzBuzzCalculator
     {
-        public static string CalculateFizzBuzz(int number)
+        public string CalculateFizzBuzz(int number)
         {
             if (number % 3 == 0 && number % 5 == 0)
             {
@@ -19,7 +19,7 @@
             return number.ToString();
         }
 
-        public static string CalculateCustomTokenResult(int number, Dictionary<int, string> tokens)
+        public string CalculateCustomTokenResult(int number, Dictionary<int, string> tokens)
         {
             var result = "";
 
