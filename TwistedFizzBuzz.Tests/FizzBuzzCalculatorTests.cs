@@ -22,7 +22,6 @@ namespace TwistedFizzBuzz.Tests
         [InlineData(27, new object[] { 9, "Buzz", 27, "Bar" }, "BuzzBar")]
         [InlineData(18, new object[] { 9, "Buzz", 27, "Bar" }, "Buzz")]
         [InlineData(0, new object[] { 5, "Fizz", 9, "Buzz", 27, "Bar" }, "FizzBuzzBar")]
-
         public void CalculateCustomToken_ShouldReturnExpectedResult(int number, object[] tokensArray, string expected)
         {
             var tokens = new Dictionary<int, string>();
